@@ -22,7 +22,7 @@ Example usage:
 import inspect
 import argparse as arg
 
-def cli(f):
+def clink(f):
   "Call `f`, first checking if any command line options override the defaults."
   do = arg.ArgumentParser(
           prog            = f.__name__,

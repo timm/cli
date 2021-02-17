@@ -1,5 +1,5 @@
 # Demo:  python3 xample.py
-from cli import cli
+from clink import clink
 
 def ageAndShoeSize(
         dob: "date of birth" = 1960,
@@ -11,4 +11,4 @@ def ageAndShoeSize(
   print(f"{where} dob + shoes = {dob+shoes} elated= {elated}")
 
 if __name__ == "__main__": 
-  cli(ageAndShoeSize)
+  clink(ageAndShoeSize)

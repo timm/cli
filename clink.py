@@ -2,11 +2,13 @@
 # vim: ts=2 sw=2 sts=2 et tw=81:
 """
 Succinct CLI tool that uses from function name, docstring, and default args.   
-(c) 2021 Tim Menzies <timm@ieee.org>, MIT License
+License: (c) 2021 Tim Menzies <timm@ieee.org>, MIT License  
+Doco: http://menzies.us/clink   
+Code: http://github.com/timm/clink
 
 Example usage:
 
-    from cli import cli
+    from clink import clink
     def ageAndShoeSize(
             dob:    "date of birth" = 1960,
             elated: "make happy"    = False,
@@ -16,7 +18,7 @@ Example usage:
       print(f"{where} dob + shoes = {dob+shoes} elated= {elated}")
     
     if __name__ == "__main__": 
-      cli(ageAndShoeSize)
+      clink(ageAndShoeSize)
 
 """
 import inspect

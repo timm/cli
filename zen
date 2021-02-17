@@ -2,4 +2,4 @@
 
 chmod +x zen
 . ../zen/zen
-master $1 
+master $* 

@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 
 chmod +x zen
-. ../zen/zen
+. ../zen/master
 master $* 

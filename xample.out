@@ -1,26 +1,31 @@
      1	
      2	#-------
-     3	% python3 xample.py -h
+     3	% python3 clink.py -h
      4	usage: ageAndShoeSize [-h] [-dob I] [-elated] [-where S] [-shoes I]
      5	
-     6	Good times for all.
-     7	  (c) Tim here now 2021
-     8	
-     9	optional arguments:
-    10	  -h, --help  show this help message and exit
-    11	  -dob I      date of birth; default= 1960
-    12	  -elated     make happy; default= False
-    13	  -where S    birth place; default= nsw range= ['nsw', 'vic']
-    14	  -shoes I    shoesize; default= 10
-    15	
-    16	#-------
-    17	% python3 xample.py
-    18	nsw dob + shoes = 1970 elated= False
-    19	
-    20	#-------
-    21	% python3 xample.py -w vic
-    22	vic dob + shoes = 1970 elated= False
-    23	
-    24	#-------
-    25	% python3 xample.py -s 1000
-    26	nsw dob + shoes = 2960 elated= False
+     6	Demo of clink:
+     7	  Function args args annotated with defaults and help text.
+     8	  Users can overide the defautsl in a command line-inferface using
+     9	
+    10	    __name__=="__main__" and clink(ageAndShoeSize)
+    11	
+    12	  
+    13	
+    14	optional arguments:
+    15	  -h, --help  show this help message and exit
+    16	  -dob I      date of birth; default= 1960
+    17	  -elated     make happy; default= False
+    18	  -where S    birth place; default= nsw range= ['nsw', 'vic']
+    19	  -shoes I    shoesize; default= 10
+    20	
+    21	#-------
+    22	% python3 clink.py
+    23	nsw dob + shoes = 1970 elated= False
+    24	
+    25	#-------
+    26	% python3 clink.py -w vic
+    27	vic dob + shoes = 1970 elated= False
+    28	
+    29	#-------
+    30	% python3 clink.py -s 1000
+    31	nsw dob + shoes = 2960 elated= False

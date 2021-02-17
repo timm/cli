@@ -6,21 +6,24 @@ License: (c) 2021 Tim Menzies <timm@ieee.org>, MIT License
 Doco: http://menzies.us/clink   
 Code: http://github.com/timm/clink
 
-Example usage:
-
-    from clink import clink
-    def ageAndShoeSize(
-            dob:    "date of birth" = 1960,
-            elated: "make happy"    = False,
-            where:  "birth place"   = ["nsw", "vic"],
-            shoes:  "shoesize"      = 10):
-      "Good times for all.  (c) Tim here now 2021"
-      print(f"{where} dob + shoes = {dob+shoes} elated= {elated}")
-    
-    if __name__ == "__main__": 
-      clink(ageAndShoeSize)
+Example:
 
 """
+def ageAndShoeSize(
+     dob:    "date of birth" = 1960,
+     elated: "make happy"    = False,
+     where:  "birth place"   = ["nsw", "vic"],
+     shoes:  "shoesize"      = 10):
+  """Demo of clink:
+  Function args args annotated with defaults and help text.
+  Users can overide the defautsl in a command line-inferface using
+
+    __name__=="__main__" and clink(ageAndShoeSize)
+
+  """
+  print(f"{where} dob + shoes = {dob+shoes} elated= {elated}")
+
+#----------------------------------------------
 import inspect
 import argparse as arg
 
@@ -28,7 +31,7 @@ def clink(f):
   "Call `f`, first checking if any command line options override the defaults."
   do = arg.ArgumentParser(
           prog            = f.__name__,
-          description     = (f.__doc__ or '').split("\n\n")[0],
+          description     = (f.__doc__ or ''),
           formatter_class = arg.RawDescriptionHelpFormatter)
   for key, v in inspect.signature(f).parameters.items():
     do.add_argument("-"+key, 
@@ -50,4 +53,4 @@ def details(x,txt,choices=None):
   else:
     return dict(help=h, default=x, metavar=m, type=t)
 
-
+__name__ == "__main__" and clink(ageAndShoeSize)

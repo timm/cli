@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+chmod +x dot
+. ../zen/dot
+master $1 

@@ -1,0 +1,26 @@
+     1	
+     2	#-------
+     3	% python3 xample.py -h
+     4	usage: ageAndShoeSize [-h] [-dob I] [-elated] [-where S] [-shoes I]
+     5	
+     6	Good times for all.
+     7	  (c) Tim here now 2021
+     8	
+     9	optional arguments:
+    10	  -h, --help  show this help message and exit
+    11	  -dob I      date of birth; default= 1960
+    12	  -elated     make happy; default= False
+    13	  -where S    birth place; default= nsw range= ['nsw', 'vic']
+    14	  -shoes I    shoesize; default= 10
+    15	
+    16	#-------
+    17	% python3 xample.py
+    18	nsw dob + shoes = 1970 elated= False
+    19	
+    20	#-------
+    21	% python3 xample.py -w vic
+    22	vic dob + shoes = 1970 elated= False
+    23	
+    24	#-------
+    25	% python3 xample.py -s 1000
+    26	nsw dob + shoes = 2960 elated= False

@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 
-chmod +x dot
-. ../zen/dot
+chmod +x zen
+. ../zen/zen
 master $1 

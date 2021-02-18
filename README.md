@@ -1,6 +1,5 @@
 
-
-Simple command line interface tool
+# CLINK: Simple command line interfaces
 
 <a  href="http://menzies.us/clink.hml"><img  width=200
 src="https://github.com/timm/zen/raw/main/read.png"></a>

@@ -14,7 +14,8 @@ to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
 copies of the Software, and to permit persons to whom the Software is
 furnished to do so, subject to the following conditions:
 
-<img src="https://github.com/timm/zen/raw/main/coder.png" align=right width=400>
+<img src="https://github.com/timm/zen/raw/main/coder.png" align=right width=300>
+
 The above copyright notice and this permission notice shall be included in all
 copies or substantial portions of the Software.
 

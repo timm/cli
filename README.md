@@ -1,11 +1,7 @@
 # cli
 Simple command line interface tool
 
-Examples: bash xample.sh
-
-## License
-
-MIT License
+Doc: http://menzies.us/clink
 
 Copyright (c) 2021 Tim Menzies
 

@@ -1,7 +1,10 @@
-# cli
+
+<img src="https://github.com/timm/zen/raw/main/coder.png" align=right width=400>
+
 Simple command line interface tool
 
-Doc: http://menzies.us/clink
+<a href="http://menzies.us/clink.hml"><img 
+src="https://github.com/timm/zen/raw/main/read.png"></a>
 
 Copyright (c) 2021 Tim Menzies
 

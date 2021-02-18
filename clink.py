@@ -2,27 +2,13 @@
 # vim: ts=2 sw=2 sts=2 et tw=81:
 """
 Succinct CLI tool that uses from function name, docstring, and default args.   
-License: (c) 2021 Tim Menzies <timm@ieee.org>, MIT License  
-Doco: http://menzies.us/clink   
-Code: http://github.com/timm/clink
 
-Example:
+- License: (c) 2021 Tim Menzies <timm@ieee.org>, MIT License  
+- Doco: http://menzies.us/clink   
+- Code: http://github.com/timm/clink
+- Example: see the [personDetails](#clink.personDetails) function.
 
 """
-def ageAndShoeSize(
-     dob:    "date of birth" = 1960,
-     elated: "make happy"    = False,
-     where:  "birth place"   = ["nsw", "vic"],
-     shoes:  "shoesize"      = 10):
-  """Demo of clink:
-  Function args args annotated with defaults and help text.
-  Users can overide the defautsl in a command line-inferface using
-
-    __name__=="__main__" and clink(ageAndShoeSize)
-
-  """
-  print(f"{where} dob + shoes = {dob+shoes} elated= {elated}")
-
 #----------------------------------------------
 import inspect
 import argparse as arg
@@ -52,5 +38,19 @@ def details(x,txt,choices=None):
     return dict(help=h, action='store_true')
   else:
     return dict(help=h, default=x, metavar=m, type=t)
+
+def personDetails(
+     dob:    "date of birth" = 1960,
+     elated: "make happy"    = False,
+     where:  "birth place"   = ["nsw", "vic"],
+     shoes:  "shoesize"      = 10):
+  """Demo of clink:
+  Function arguments annotated with defaults and help text.
+  Users can override the defaults in a command line-inferface using
+
+        __name__=="__main__" and clink(personDetails)
+
+  """
+  print(f"{where} dob + shoes = {dob+shoes} elated= {elated}")
 
 __name__ == "__main__" and clink(ageAndShoeSize)

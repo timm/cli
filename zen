@@ -2,4 +2,12 @@
 
 chmod +x zen
 . ../zen/master
-master $* 
+if  [[ $1 == "-T" ]]; then  (
+  o python3 clink.py -h
+  o python3 clink.py
+  o python3 clink.py -w vic
+  o python3 clink.py -s 1000 
+  ) | cat -n > clink.out
+  cat clink.out 
+else  master $* 
+fi

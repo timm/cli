@@ -1,7 +1,7 @@
 
 # CLINK: Simple command line interfaces
 
-<a  href="http://menzies.us/clink.hml"><img  width=200
+<a  href="http://menzies.us/clink"><img  width=200
 src="https://github.com/timm/zen/raw/main/read.png"></a>
 
 Copyright (c) 2021 Tim Menzies

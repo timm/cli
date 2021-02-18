@@ -1,9 +1,8 @@
 
-<img src="https://github.com/timm/zen/raw/main/coder.png" align=right width=400>
 
 Simple command line interface tool
 
-<a href="http://menzies.us/clink.hml"><img 
+<a width=200 href="http://menzies.us/clink.hml"><img 
 src="https://github.com/timm/zen/raw/main/read.png"></a>
 
 Copyright (c) 2021 Tim Menzies
@@ -15,6 +14,7 @@ to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
 copies of the Software, and to permit persons to whom the Software is
 furnished to do so, subject to the following conditions:
 
+<img src="https://github.com/timm/zen/raw/main/coder.png" align=right width=400>
 The above copyright notice and this permission notice shall be included in all
 copies or substantial portions of the Software.
 
